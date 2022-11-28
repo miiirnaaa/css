@@ -1,0 +1,24 @@
+@import "base/reset";
+@import "abstracts/mixins";
+@import "base/colors";
+
+main {@include main;}
+div {@include div;}
+
+div:nth-child(1){
+    background-color: rgba($color1, $alpha);
+   @include animation1;
+}
+div:nth-child(2){
+    background-color: rgba($color2, $alpha);
+    @include animation2;
+}
+div:nth-child(3){
+    background-color: rgba($color3, $alpha);
+    @include animation3;
+}
+
+@keyframes povuci{
+    0% {transform: translateX(0);}
+100%{transform: translateX(-80vw);}
+}
